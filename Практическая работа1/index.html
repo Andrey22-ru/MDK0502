@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Питербург - Экономика, Культура, Туризм</title>
+<style>
+    *{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+    }
+    body {
+        background: #f0f4fa;
+        font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+        padding: 30px 20px;
+        color: #1e2b3c;
+        line-height: 1.6;
+    }
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 32px;
+        box-shadow: 0 20px 40px -12px rgba(0, 20, 40, 0.25)
+        padding: 40px 45px;
+
+    }
+    h1 {
+        font-size: 2,6rem;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        color: #0b1c2f;
+        border-left:6px solid #1e7b85;
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+    .subhead {
+        font-size: 1.1rem;
+        color: #3e5b6e;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 2px dashed #d0ddee;
+    }
+    .section {
+        margin-bottom: 8px;
+    }
+    .section:last-of-type {
+        margin-bottom: 8px;
+    }
+    h2 {
+        font-size: 2rem;
+            font-weight: 500;
+            color: #1a3b4f;
+            margin-top: 8px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+    }
+        h2 span {
+            background: #d7e5f5;
+            padding: 0 14px;
+            border-radius: 40px;
+            font-size: 1rem;
+            font-weight: 400;
+            color: #1f4b62;
+        }
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: #1f4b62;
+            margin-top: 24px;
+            margin-bottom: 8px;
+        }
+        p {
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+            color: #1f3345;
+        }
+        .img-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px 30px;
+            margin: 20px 0 18px;
+            align-items: flex-start;
+        }
+        .img-row img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+            background: #eef3f9;
+            flex: 1 1 240px;
+            object-fit: cover;
+        }
+        .img-row .img-caption {
+            flex: 2 1 300px;
+        }
+        .img-caption p {
+            margin-top: 4px;
+        }
+        a {
+            color: #1c6b7a;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dotted #8fb1c9;
+            transition: 0.15s;
+        }
+        a:hover {
+            color: #0d4552;
+            border-bottom: 2px solid #1c6b7a;
+        }
+        ul {
+            margin: 12px 0 16px 24px;
+            list-style-type: none;
+        }
+         ul li {
+            padding: 6px 0 6px 28px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%231e7b85" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>') left center no-repeat;
+            background-size: 18px;
+            margin-bottom: 2px;
+        }
+        ul li strong {
+            color: #0f3748;
+        }
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px 30px;
+            margin: 18px 0 8px;
+        }
+        .card-grid .card {
+            background: #f6faff;
+            border-radius: 24px;
+            padding: 18px 22px 22px;
+            flex: 1 1 200px;
+            box-shadow: 0 4px 12px rgba(0, 20, 30, 0.04);
+            border: 1px solid #e6edf6;
+        }
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.3rem;
+            border-bottom: 2px solid #c7ddec;
+            padding-bottom: 8px;
+        }
+        .card ul {
+            margin-left: 0;
+        }
+        .card ul li {
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="%233a6f81" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>') left center no-repeat;
+            background-size: 16px;
+            padding-left: 26px;
+        }
+        .footer-note {
+            margin-top: 34px;
+            padding-top: 20px;
+            border-top: 1px solid #dce6f2;
+            font-size: 0.95rem;
+            color: #3f5d73;
+            text-align: center;
+        }
+        .footer-note a {
+            border-bottom: none;
+        }
+        @media (max-width: 650px) {
+            .container { padding: 20px 18px; }
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.7rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1> Санкт-Петербург</h1>
+    <div class="subhead">
+        Город федерального значения, культурная столица России и крупнейший экономический центр Северо-Запада.
+    </div>
+
+    <!-- РАЗДЕЛ 1: ЭКОНОМИКА -->
+    <div class="section">
+        <h2> Экономика <span>инновации &amp; промышленность</span></h2>
+        <p>
+            Экономика Санкт-Петербурга — одна из самых диверсифицированных в стране. 
+            Здесь развиты машиностроение, судостроение, фармацевтика, IT-сектор и финансовые услуги. 
+            Город является важнейшим логистическим узлом Балтийского региона.
+        </p>
+        <div class="img-row">
+            <img src="https://avatars.mds.yandex.net/get-altay/5596516/2a000001806ffaad540c567b2391057c9f4e/L_height" alt="Деловой центр Санкт-Петербурга" loading="lazy">
+            <img src="https://vkg.ru/images/wisiwig/obch-vid.jpg" alt="Промышленность и логистика" loading="lazy">
+        </div>
+        <p>
+            <strong>Ключевые отрасли:</strong> судостроение (заводы «Адмиралтейские верфи», «Северная верфь»), 
+            энергетическое машиностроение (Силовые машины), автомобилестроение (Hyundai, Nissan), 
+            а также пищевая промышленность и производство стройматериалов. 
+            В последние годы стремительно растёт IT-кластер и сектор 
+            финтех-решений.
+        </p>
+        <h3>Крупнейшие работодатели</h3>
+        <ul>
+            <li><strong>Газпром нефть</strong> — штаб-квартира и нефтепереработка</li>
+            <li><strong>Банк «Санкт-Петербург»</strong> — финансовый сектор</li>
+            <li><strong>Кировский завод</strong> — тяжёлое машиностроение</li>
+            <li><strong>Лента</strong> — ритейл и логистика</li>
+        </ul>
+        <p>
+            По объёму ВРП город стабильно входит в топ-3 среди регионов России, 
+            уступая только Москве и Московской области. 
+            <a href="#" target="_blank">Подробнее об экономике Петербурга</a>
+            !!!!
+        </p>
+    </div>
